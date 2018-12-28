@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List View Controller-->
+        <scene sceneID="8j4-YJ-jFU">
+            <objects>
+                <viewController storyboardIdentifier="listScreen" id="4ke-py-oN7" customClass="ListViewController" customModule="CleanFlickr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MpE-vh-so7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="78j-zR-PYC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OX5-IZ-kOJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aWR-gU-HxK">
+                                                <rect key="frame" x="20" y="8" width="335" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="xOS-I5-MZq"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="4ke-py-oN7" id="wyQ-e8-Eni"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="8" left="20" bottom="8" right="20"/>
+                                    </stackView>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CXz-di-hxB">
+                                        <rect key="frame" x="0.0" y="85" width="375" height="562"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CYz-m5-Xfg">
+                                            <size key="itemSize" width="200" height="200"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="FlickrCell" id="Jv7-bH-gUn" customClass="FlickrPhotoCell" customModule="CleanFlickr">
+                                                <rect key="frame" x="87.5" y="0.0" width="200" height="200"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c0X-dh-bBl">
+                                                            <rect key="frame" x="0.0" y="0.0" width="200" height="210"/>
+                                                        </imageView>
+                                                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="18F-gb-tBO">
+                                                            <rect key="frame" x="89.5" y="90" width="20" height="20"/>
+                                                        </activityIndicatorView>
+                                                    </subviews>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="c0X-dh-bBl" secondAttribute="bottom" id="4ha-fS-UMC"/>
+                                                    <constraint firstItem="c0X-dh-bBl" firstAttribute="leading" secondItem="Jv7-bH-gUn" secondAttribute="leading" id="8A0-Xq-rMB"/>
+                                                    <constraint firstItem="18F-gb-tBO" firstAttribute="centerX" secondItem="Jv7-bH-gUn" secondAttribute="centerX" id="J7n-Ud-J6m"/>
+                                                    <constraint firstAttribute="trailing" secondItem="c0X-dh-bBl" secondAttribute="trailing" id="LkJ-Nc-kcc"/>
+                                                    <constraint firstItem="18F-gb-tBO" firstAttribute="centerY" secondItem="Jv7-bH-gUn" secondAttribute="centerY" id="goB-8t-a5O"/>
+                                                    <constraint firstItem="c0X-dh-bBl" firstAttribute="top" secondItem="Jv7-bH-gUn" secondAttribute="top" id="tuP-Gd-Qc0"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="activityIndicator" destination="18F-gb-tBO" id="euu-fH-uiV"/>
+                                                    <outlet property="imageView" destination="c0X-dh-bBl" id="9ik-oA-7Ua"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="4ke-py-oN7" id="TuF-SK-tHH"/>
+                                            <outlet property="delegate" destination="4ke-py-oN7" id="vEd-fO-sjQ"/>
+                                            <outlet property="prefetchDataSource" destination="4ke-py-oN7" id="RhD-P4-lwh"/>
+                                        </connections>
+                                    </collectionView>
+                                </subviews>
+                            </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="OaJ-Iw-eWl">
+                                <rect key="frame" x="325" y="38" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OaJ-Iw-eWl" firstAttribute="centerY" secondItem="aWR-gU-HxK" secondAttribute="centerY" id="7Mc-yG-Wz2"/>
+                            <constraint firstItem="PUT-Dt-tee" firstAttribute="trailing" secondItem="OaJ-Iw-eWl" secondAttribute="trailing" constant="30" id="9Tm-Uv-Fuk"/>
+                            <constraint firstItem="PUT-Dt-tee" firstAttribute="trailing" secondItem="78j-zR-PYC" secondAttribute="trailing" id="XCJ-3P-ie3"/>
+                            <constraint firstItem="PUT-Dt-tee" firstAttribute="bottom" secondItem="78j-zR-PYC" secondAttribute="bottom" id="dn5-na-jKe"/>
+                            <constraint firstItem="78j-zR-PYC" firstAttribute="top" secondItem="PUT-Dt-tee" secondAttribute="top" id="qCT-yQ-xk5"/>
+                            <constraint firstItem="78j-zR-PYC" firstAttribute="leading" secondItem="PUT-Dt-tee" secondAttribute="leading" id="rWI-Hp-LOT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PUT-Dt-tee"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="OaJ-Iw-eWl" id="wJJ-wL-b4L"/>
+                        <outlet property="collectionView" destination="CXz-di-hxB" id="LdY-em-Kv0"/>
+                        <outlet property="textField" destination="aWR-gU-HxK" id="gFS-Xn-E81"/>
+                        <segue destination="bMV-0Q-ATe" kind="popoverPresentation" identifier="showDetailScreen" popoverAnchorView="CXz-di-hxB" id="e5L-Zs-tfr">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E8B-ot-XFr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-247.19999999999999" y="-27.436281859070466"/>
+        </scene>
+        <!--detailScreen-->
+        <scene sceneID="akQ-Uy-9Kp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Detail" referencedIdentifier="detailScreen" id="bMV-0Q-ATe" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Wu-LW-POW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="405" y="-99"/>
+        </scene>
+    </scenes>
+</document>

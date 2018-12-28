@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="MdK-Pv-k5T">
+            <objects>
+                <viewController storyboardIdentifier="detailScreen" id="80P-CI-l1l" customClass="DetailViewController" customModule="CleanFlickr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hCf-dA-4XX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="afT-pg-IHO">
+                                <rect key="frame" x="20" y="152" width="335" height="363.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8bZ-nW-wIB">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="335"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="8bZ-nW-wIB" secondAttribute="height" multiplier="1:1" id="TPL-bo-X8R"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTa-uN-pua">
+                                        <rect key="frame" x="146.5" y="343" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="4aO-De-CPT">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="afT-pg-IHO" firstAttribute="leading" secondItem="HRd-IA-XdU" secondAttribute="leading" constant="20" id="SOw-dP-nlb"/>
+                            <constraint firstItem="afT-pg-IHO" firstAttribute="centerX" secondItem="hCf-dA-4XX" secondAttribute="centerX" id="hse-Ac-DVL"/>
+                            <constraint firstItem="afT-pg-IHO" firstAttribute="centerY" secondItem="hCf-dA-4XX" secondAttribute="centerY" id="iAR-h2-AJc"/>
+                            <constraint firstItem="4aO-De-CPT" firstAttribute="centerX" secondItem="hCf-dA-4XX" secondAttribute="centerX" id="wM8-mX-EM4"/>
+                            <constraint firstItem="4aO-De-CPT" firstAttribute="centerY" secondItem="hCf-dA-4XX" secondAttribute="centerY" id="xJ3-pn-IKb"/>
+                            <constraint firstItem="HRd-IA-XdU" firstAttribute="trailing" secondItem="afT-pg-IHO" secondAttribute="trailing" constant="20" id="zYr-tR-Emq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HRd-IA-XdU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lWS-Yt-vfg">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="cJi-bC-ENV">
+                            <connections>
+                                <action selector="closeScreen:" destination="80P-CI-l1l" id="MBX-1U-jon"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="4aO-De-CPT" id="P1e-nL-CxQ"/>
+                        <outlet property="imageAspectRatioConstraint" destination="TPL-bo-X8R" id="11P-AP-Vri"/>
+                        <outlet property="imageContainerStackView" destination="afT-pg-IHO" id="ggI-Aq-4tR"/>
+                        <outlet property="imageView" destination="8bZ-nW-wIB" id="hSC-3I-MU0"/>
+                        <outlet property="titleLabel" destination="xTa-uN-pua" id="fCI-mQ-OHZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ugO-Yl-hr2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="204"/>
+        </scene>
+    </scenes>
+</document>
