@@ -118,7 +118,7 @@ extension ListViewController: UICollectionViewDataSource {
                                  cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier,
                                                             for: indexPath) as? FlickrPhotoCell else { fatalError("failed to init from Storyboard") }
-        let flickrPhoto = searchGroup.searchResults[(indexPath as NSIndexPath).row]
+        let flickrPhoto = searchGroup.searchResults[indexPath.row]
         cell.backgroundColor = UIColor.white
         cell.startAnimating()
         cell.imageView.loadImage(withUrl: flickrPhoto.photoURLSmall, placeholderImage: nil) { [weak cell] _,_  in
@@ -126,6 +126,28 @@ extension ListViewController: UICollectionViewDataSource {
         }
         
         return cell
+    }
+}
+
+// MARK: UICollectionViewDataSourcePrefetching
+extension ListViewController: UICollectionViewDataSourcePrefetching {
+    
+    /// - Tag: Prefetching
+    func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
+        // Begin asynchronously fetching data for the requested index paths.
+        for indexPath in indexPaths {
+            let flickrPhoto = searchGroup.searchResults[indexPath.row]
+            ImageDownloader.default.fetch(with: flickrPhoto.photoURLSmall, completion: nil)
+        }
+    }
+    
+    /// - Tag: CancelPrefetching
+    func collectionView(_ collectionView: UICollectionView, cancelPrefetchingForItemsAt indexPaths: [IndexPath]) {
+        // Cancel any in-flight requests for data for the specified index paths.
+        for indexPath in indexPaths {
+            let flickrPhoto = searchGroup.searchResults[indexPath.row]
+            ImageDownloader.default.cancel(for: flickrPhoto.photoURLSmall)
+        }
     }
 }
 

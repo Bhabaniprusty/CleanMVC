@@ -9,13 +9,13 @@
 import UIKit
 
 public protocol ImageFetcher {
-    func fetch(with urlString : String, completion: @escaping (String, UIImage?) -> Void)
+    func fetch(with urlString : String, completion: ((String, UIImage?) -> Void)?)
     func cancel(for urlString: String)
 }
 
 
 open class ImageDownloader: ImageFetcher {
-    public func fetch(with urlString: String, completion: @escaping (String, UIImage?) -> Void) {
+    public func fetch(with urlString: String, completion: ((String, UIImage?) -> Void)?) {
         cancel(for: urlString)
         guard let task = requestTask(with: urlString, completion: completion) else { return }
         synchronizationQueue.sync {
@@ -31,28 +31,31 @@ open class ImageDownloader: ImageFetcher {
         }
     }
     
-    private func requestTask(with urlString : String, completion: @escaping (String, UIImage?) -> Void) ->  (Cancelable & Resumeable)? {
+    private func requestTask(with urlString : String, completion: ((String, UIImage?) -> Void)?) ->  (Cancelable & Resumeable)? {
         
         //if url is invalid
         guard let url = URL(string: urlString) else {
-            completion(urlString, nil)
+            completion?(urlString, nil)
             return nil
         }
         
         // check cached image
         if let cachedImage = imageCache.object(for: urlString) {
-            completion(urlString, cachedImage)
+            completion?(urlString, cachedImage)
             return nil
         }
         
         return session.fetchTask(with: url, completionHandler: { (data, response, error)  in
             DispatchQueue.main.async { [weak self] in
-                guard let data = data, let image = UIImage(data: data) else { return completion(urlString, nil) }
+                guard let data = data, let image = UIImage(data: data) else {
+                    completion?(urlString, nil)
+                    return
+                }
                 self?.imageCache.add(image, for: urlString)
                 self?.synchronizationQueue.sync {
                     self?.requestTaskDictionary[urlString] = nil
                 }
-                completion(urlString, image)
+                completion?(urlString, image)
             }
         })
     }

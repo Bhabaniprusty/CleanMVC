@@ -25,7 +25,6 @@
                                 </connections>
                             </containerView>
                         </subviews>
-                        <color key="backgroundColor" red="0.5039403874370576" green="1" blue="0.53473671991754368" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="H5M-Zs-R0O" firstAttribute="leading" secondItem="FOk-xt-6EP" secondAttribute="leading" id="2hc-aS-zeI"/>
                             <constraint firstItem="FOk-xt-6EP" firstAttribute="trailing" secondItem="H5M-Zs-R0O" secondAttribute="trailing" id="iMe-CG-zeq"/>
