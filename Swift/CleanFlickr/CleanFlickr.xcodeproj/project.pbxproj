@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1110686B21D37DC200688478 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1110686A21D37DC200688478 /* AppDelegate.swift */; };
 		1110687221D37DCA00688478 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1110687121D37DCA00688478 /* Assets.xcassets */; };
 		1110687521D37DCB00688478 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1110687321D37DCB00688478 /* LaunchScreen.storyboard */; };
 		1110688021D37DCB00688478 /* CleanFlickrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1110687F21D37DCB00688478 /* CleanFlickrTests.swift */; };
@@ -29,12 +28,10 @@
 		111068BA21D39D4F00688478 /* DetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111068B921D39D4F00688478 /* DetailBuilder.swift */; };
 		111068BE21D39EAE00688478 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111068BD21D39EAD00688478 /* Service.swift */; };
 		111068C021D39F3E00688478 /* FlickrPhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111068BF21D39F3E00688478 /* FlickrPhotoService.swift */; };
-		111068C321D3A11A00688478 /* Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111068C221D3A11A00688478 /* Cancelable.swift */; };
 		111068D821D3C80000688478 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111068D221D3C80000688478 /* RootRouter.swift */; };
 		111068DA21D3C80000688478 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111068D421D3C80000688478 /* RootViewController.swift */; };
 		111068DB21D3C80000688478 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111068D521D3C80000688478 /* RootInteractor.swift */; };
 		111068DD21D3C90E00688478 /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111068DC21D3C90E00688478 /* RootBuilder.swift */; };
-		111068E321D3D24C00688478 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111068E221D3D24C00688478 /* AppComponent.swift */; };
 		111068E521D3DC3900688478 /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111068E421D3DC3900688478 /* Root.storyboard */; };
 		111068FB21D4519200688478 /* FlickrPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111068FA21D4519200688478 /* FlickrPhotoCell.swift */; };
 		1110691921D54DF700688478 /* SearchGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1110690721D54DF700688478 /* SearchGroup.swift */; };
@@ -45,9 +42,6 @@
 		1110691E21D54DF700688478 /* ViewableRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1110691021D54DF700688478 /* ViewableRouter.swift */; };
 		1110691F21D54DF700688478 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1110691121D54DF700688478 /* Component.swift */; };
 		1110692021D54DF700688478 /* LaunchRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1110691221D54DF700688478 /* LaunchRouting.swift */; };
-		1110692121D54DF700688478 /* UIScrollView+LoadMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1110691421D54DF700688478 /* UIScrollView+LoadMore.swift */; };
-		1110692221D54DF700688478 /* UIImageView+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1110691521D54DF700688478 /* UIImageView+Network.swift */; };
-		1110692321D54DF700688478 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1110691621D54DF700688478 /* UIViewController+Alerts.swift */; };
 		1110692421D54DF700688478 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1110691821D54DF700688478 /* Dynamic.swift */; };
 		1110692721D54E2E00688478 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1110692621D54E2E00688478 /* Environment.swift */; };
 		1110692921D54E4100688478 /* EnvironmentVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1110692821D54E4100688478 /* EnvironmentVariables.swift */; };
@@ -65,10 +59,21 @@
 		1110694721D5DC3F00688478 /* DetailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1110694321D5DC3F00688478 /* DetailInteractorTests.swift */; };
 		1110694821D5DC3F00688478 /* DetailWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1110694421D5DC3F00688478 /* DetailWorkerTests.swift */; };
 		1110694921D5DC3F00688478 /* DetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1110694521D5DC3F00688478 /* DetailPresenterTests.swift */; };
+		1136BEAC21DA639D00D44CF5 /* Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136BEA521DA639D00D44CF5 /* Cancelable.swift */; };
+		1136BEAD21DA639D00D44CF5 /* UIScrollView+LoadMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136BEA721DA639D00D44CF5 /* UIScrollView+LoadMore.swift */; };
+		1136BEAE21DA639D00D44CF5 /* UIImageView+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136BEA821DA639D00D44CF5 /* UIImageView+Network.swift */; };
+		1136BEAF21DA639D00D44CF5 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136BEAA21DA639D00D44CF5 /* UIViewController+Alerts.swift */; };
+		1136BEB021DA639D00D44CF5 /* UIViewController+content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136BEAB21DA639D00D44CF5 /* UIViewController+content.swift */; };
+		1136BEB421DA63D300D44CF5 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136BEB221DA63D300D44CF5 /* AppComponent.swift */; };
+		1136BEB521DA63D300D44CF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136BEB321DA63D300D44CF5 /* AppDelegate.swift */; };
+		1136BEB721DA641000D44CF5 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136BEB621DA641000D44CF5 /* ImageDownloader.swift */; };
+		1136BEB921DA647400D44CF5 /* URLSession+SessionRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136BEB821DA647400D44CF5 /* URLSession+SessionRequestable.swift */; };
+		1136BEBB21DA64BA00D44CF5 /* Resumeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136BEBA21DA64BA00D44CF5 /* Resumeable.swift */; };
+		1136BEBD21DA64FD00D44CF5 /* ObjectCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136BEBC21DA64FD00D44CF5 /* ObjectCache.swift */; };
+		1136BEBF21DA653100D44CF5 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136BEBE21DA653100D44CF5 /* ImageCache.swift */; };
 		118BBB1E21D5F2A0006406B4 /* JsonMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118BBB1D21D5F2A0006406B4 /* JsonMocks.swift */; };
 		118BBB1F21D5F2E9006406B4 /* JsonMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118BBB1D21D5F2A0006406B4 /* JsonMocks.swift */; };
 		118BBB2121D5F324006406B4 /* FlickrPhotos.json in Resources */ = {isa = PBXBuildFile; fileRef = 118BBB2021D5F324006406B4 /* FlickrPhotos.json */; };
-		118BBB2321D5F85A006406B4 /* UIViewController+content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118BBB2221D5F85A006406B4 /* UIViewController+content.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,7 +95,6 @@
 
 /* Begin PBXFileReference section */
 		1110686721D37DC200688478 /* CleanFlickr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanFlickr.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1110686A21D37DC200688478 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1110687121D37DCA00688478 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1110687421D37DCB00688478 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1110687621D37DCB00688478 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,12 +121,10 @@
 		111068B921D39D4F00688478 /* DetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBuilder.swift; sourceTree = "<group>"; };
 		111068BD21D39EAD00688478 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		111068BF21D39F3E00688478 /* FlickrPhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPhotoService.swift; sourceTree = "<group>"; };
-		111068C221D3A11A00688478 /* Cancelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancelable.swift; sourceTree = "<group>"; };
 		111068D221D3C80000688478 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		111068D421D3C80000688478 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		111068D521D3C80000688478 /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
 		111068DC21D3C90E00688478 /* RootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
-		111068E221D3D24C00688478 /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
 		111068E421D3DC3900688478 /* Root.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Root.storyboard; sourceTree = "<group>"; };
 		111068FA21D4519200688478 /* FlickrPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPhotoCell.swift; sourceTree = "<group>"; };
 		1110690721D54DF700688478 /* SearchGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchGroup.swift; sourceTree = "<group>"; };
@@ -133,9 +135,6 @@
 		1110691021D54DF700688478 /* ViewableRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewableRouter.swift; sourceTree = "<group>"; };
 		1110691121D54DF700688478 /* Component.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 		1110691221D54DF700688478 /* LaunchRouting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchRouting.swift; sourceTree = "<group>"; };
-		1110691421D54DF700688478 /* UIScrollView+LoadMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+LoadMore.swift"; sourceTree = "<group>"; };
-		1110691521D54DF700688478 /* UIImageView+Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Network.swift"; sourceTree = "<group>"; };
-		1110691621D54DF700688478 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		1110691821D54DF700688478 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		1110692621D54E2E00688478 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		1110692821D54E4100688478 /* EnvironmentVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentVariables.swift; sourceTree = "<group>"; };
@@ -153,9 +152,20 @@
 		1110694321D5DC3F00688478 /* DetailInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractorTests.swift; sourceTree = "<group>"; };
 		1110694421D5DC3F00688478 /* DetailWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWorkerTests.swift; sourceTree = "<group>"; };
 		1110694521D5DC3F00688478 /* DetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenterTests.swift; sourceTree = "<group>"; };
+		1136BEA521DA639D00D44CF5 /* Cancelable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cancelable.swift; sourceTree = "<group>"; };
+		1136BEA721DA639D00D44CF5 /* UIScrollView+LoadMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+LoadMore.swift"; sourceTree = "<group>"; };
+		1136BEA821DA639D00D44CF5 /* UIImageView+Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Network.swift"; sourceTree = "<group>"; };
+		1136BEAA21DA639D00D44CF5 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
+		1136BEAB21DA639D00D44CF5 /* UIViewController+content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+content.swift"; sourceTree = "<group>"; };
+		1136BEB221DA63D300D44CF5 /* AppComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		1136BEB321DA63D300D44CF5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1136BEB621DA641000D44CF5 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		1136BEB821DA647400D44CF5 /* URLSession+SessionRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+SessionRequestable.swift"; sourceTree = "<group>"; };
+		1136BEBA21DA64BA00D44CF5 /* Resumeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resumeable.swift; sourceTree = "<group>"; };
+		1136BEBC21DA64FD00D44CF5 /* ObjectCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectCache.swift; sourceTree = "<group>"; };
+		1136BEBE21DA653100D44CF5 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		118BBB1D21D5F2A0006406B4 /* JsonMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonMocks.swift; sourceTree = "<group>"; };
 		118BBB2021D5F324006406B4 /* FlickrPhotos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FlickrPhotos.json; sourceTree = "<group>"; };
-		118BBB2221D5F85A006406B4 /* UIViewController+content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+content.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,11 +217,9 @@
 			isa = PBXGroup;
 			children = (
 				1110690521D54DF700688478 /* Common */,
-				111068C121D3A0FC00688478 /* Network */,
 				111068BB21D39DF900688478 /* Service */,
 				1110689821D37DFF00688478 /* Components */,
-				1110686A21D37DC200688478 /* AppDelegate.swift */,
-				111068E221D3D24C00688478 /* AppComponent.swift */,
+				1136BEB121DA63D300D44CF5 /* AppStart */,
 				1110687121D37DCA00688478 /* Assets.xcassets */,
 				1110687321D37DCB00688478 /* LaunchScreen.storyboard */,
 				1110687621D37DCB00688478 /* Info.plist */,
@@ -297,14 +305,6 @@
 			path = FlickrPhotos;
 			sourceTree = "<group>";
 		};
-		111068C121D3A0FC00688478 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				111068C221D3A11A00688478 /* Cancelable.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		111068CF21D3C7E400688478 /* Root */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,9 +325,9 @@
 				1110690621D54DF700688478 /* SerachModel */,
 				1110690821D54DF700688478 /* ViewModel */,
 				1110690A21D54DF700688478 /* Throttler */,
-				1110690C21D54DF700688478 /* ImageCahe */,
+				1136BEA221DA638600D44CF5 /* ImageCache */,
+				1136BEA321DA639D00D44CF5 /* Extensions */,
 				1110690D21D54DF700688478 /* Component */,
-				1110691321D54DF700688478 /* Extensions */,
 				1110691721D54DF700688478 /* Bindings */,
 				118BBB1C21D5F281006406B4 /* Mock */,
 			);
@@ -358,13 +358,6 @@
 			path = Throttler;
 			sourceTree = "<group>";
 		};
-		1110690C21D54DF700688478 /* ImageCahe */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ImageCahe;
-			sourceTree = "<group>";
-		};
 		1110690D21D54DF700688478 /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,17 +368,6 @@
 				1110691221D54DF700688478 /* LaunchRouting.swift */,
 			);
 			path = Component;
-			sourceTree = "<group>";
-		};
-		1110691321D54DF700688478 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				1110691421D54DF700688478 /* UIScrollView+LoadMore.swift */,
-				1110691521D54DF700688478 /* UIImageView+Network.swift */,
-				1110691621D54DF700688478 /* UIViewController+Alerts.swift */,
-				118BBB2221D5F85A006406B4 /* UIViewController+content.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		1110691721D54DF700688478 /* Bindings */ = {
@@ -447,6 +429,63 @@
 			name = Detail;
 			path = CleanFlickrTests/Detail;
 			sourceTree = SOURCE_ROOT;
+		};
+		1136BEA221DA638600D44CF5 /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				1136BEB621DA641000D44CF5 /* ImageDownloader.swift */,
+				1136BEBC21DA64FD00D44CF5 /* ObjectCache.swift */,
+				1136BEBE21DA653100D44CF5 /* ImageCache.swift */,
+			);
+			path = ImageCache;
+			sourceTree = "<group>";
+		};
+		1136BEA321DA639D00D44CF5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1136BEA421DA639D00D44CF5 /* Network */,
+				1136BEA621DA639D00D44CF5 /* View */,
+				1136BEA921DA639D00D44CF5 /* ViewController */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1136BEA421DA639D00D44CF5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1136BEA521DA639D00D44CF5 /* Cancelable.swift */,
+				1136BEBA21DA64BA00D44CF5 /* Resumeable.swift */,
+				1136BEB821DA647400D44CF5 /* URLSession+SessionRequestable.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1136BEA621DA639D00D44CF5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1136BEA721DA639D00D44CF5 /* UIScrollView+LoadMore.swift */,
+				1136BEA821DA639D00D44CF5 /* UIImageView+Network.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1136BEA921DA639D00D44CF5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1136BEAA21DA639D00D44CF5 /* UIViewController+Alerts.swift */,
+				1136BEAB21DA639D00D44CF5 /* UIViewController+content.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1136BEB121DA63D300D44CF5 /* AppStart */ = {
+			isa = PBXGroup;
+			children = (
+				1136BEB221DA63D300D44CF5 /* AppComponent.swift */,
+				1136BEB321DA63D300D44CF5 /* AppDelegate.swift */,
+			);
+			path = AppStart;
+			sourceTree = "<group>";
 		};
 		118BBB1C21D5F281006406B4 /* Mock */ = {
 			isa = PBXGroup;
@@ -594,47 +633,52 @@
 				111068B121D37EC900688478 /* DetailViewController.swift in Sources */,
 				1110693421D5D5B100688478 /* Request.swift in Sources */,
 				1110692421D54DF700688478 /* Dynamic.swift in Sources */,
+				1136BEB521DA63D300D44CF5 /* AppDelegate.swift in Sources */,
 				1110691F21D54DF700688478 /* Component.swift in Sources */,
 				111068B821D39D3400688478 /* ListBuilder.swift in Sources */,
 				1110693221D5D5B100688478 /* BaseService.swift in Sources */,
-				1110692321D54DF700688478 /* UIViewController+Alerts.swift in Sources */,
 				1110692021D54DF700688478 /* LaunchRouting.swift in Sources */,
-				111068E321D3D24C00688478 /* AppComponent.swift in Sources */,
-				1110692221D54DF700688478 /* UIImageView+Network.swift in Sources */,
 				111068AF21D37EC900688478 /* DetailRouter.swift in Sources */,
 				111068A221D37EB100688478 /* ListWorker.swift in Sources */,
+				1136BEBF21DA653100D44CF5 /* ImageCache.swift in Sources */,
+				1136BEB421DA63D300D44CF5 /* AppComponent.swift in Sources */,
 				1110693021D5D5B100688478 /* Result.swift in Sources */,
 				111068AD21D37EC900688478 /* DetailPresenter.swift in Sources */,
-				111068C321D3A11A00688478 /* Cancelable.swift in Sources */,
 				1110692921D54E4100688478 /* EnvironmentVariables.swift in Sources */,
 				1110691A21D54DF700688478 /* ViewModelType.swift in Sources */,
+				1136BEAE21DA639D00D44CF5 /* UIImageView+Network.swift in Sources */,
 				111068A121D37EB100688478 /* ListPresenter.swift in Sources */,
 				111068DA21D3C80000688478 /* RootViewController.swift in Sources */,
-				1110692121D54DF700688478 /* UIScrollView+LoadMore.swift in Sources */,
 				1110691C21D54DF700688478 /* Builder.swift in Sources */,
 				1110693321D5D5B100688478 /* ServiceError.swift in Sources */,
 				111068BA21D39D4F00688478 /* DetailBuilder.swift in Sources */,
 				111068A421D37EB100688478 /* ListModels.swift in Sources */,
 				111068FB21D4519200688478 /* FlickrPhotoCell.swift in Sources */,
 				118BBB1E21D5F2A0006406B4 /* JsonMocks.swift in Sources */,
+				1136BEAF21DA639D00D44CF5 /* UIViewController+Alerts.swift in Sources */,
 				111068A321D37EB100688478 /* ListRouter.swift in Sources */,
+				1136BEB721DA641000D44CF5 /* ImageDownloader.swift in Sources */,
 				1110693121D5D5B100688478 /* ParameterEncoding.swift in Sources */,
-				118BBB2321D5F85A006406B4 /* UIViewController+content.swift in Sources */,
 				1110691B21D54DF700688478 /* Throttler.swift in Sources */,
 				111068D821D3C80000688478 /* RootRouter.swift in Sources */,
+				1136BEBD21DA64FD00D44CF5 /* ObjectCache.swift in Sources */,
+				1136BEB021DA639D00D44CF5 /* UIViewController+content.swift in Sources */,
 				111068BE21D39EAE00688478 /* Service.swift in Sources */,
+				1136BEBB21DA64BA00D44CF5 /* Resumeable.swift in Sources */,
 				111068B021D37EC900688478 /* DetailModels.swift in Sources */,
 				1110692721D54E2E00688478 /* Environment.swift in Sources */,
 				111068C021D39F3E00688478 /* FlickrPhotoService.swift in Sources */,
 				1110693721D5DAF200688478 /* Injectable.swift in Sources */,
-				1110686B21D37DC200688478 /* AppDelegate.swift in Sources */,
 				111068B221D37EC900688478 /* DetailInteractor.swift in Sources */,
 				111068DD21D3C90E00688478 /* RootBuilder.swift in Sources */,
+				1136BEAC21DA639D00D44CF5 /* Cancelable.swift in Sources */,
+				1136BEB921DA647400D44CF5 /* URLSession+SessionRequestable.swift in Sources */,
 				111068DB21D3C80000688478 /* RootInteractor.swift in Sources */,
 				1110691E21D54DF700688478 /* ViewableRouter.swift in Sources */,
 				111068A621D37EB100688478 /* ListInteractor.swift in Sources */,
 				111068A521D37EB100688478 /* ListViewController.swift in Sources */,
 				1110691D21D54DF700688478 /* Dependency.swift in Sources */,
+				1136BEAD21DA639D00D44CF5 /* UIScrollView+LoadMore.swift in Sources */,
 				1110691921D54DF700688478 /* SearchGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
