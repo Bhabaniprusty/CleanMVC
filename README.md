@@ -16,4 +16,6 @@ The MVC architectural pattern has existed for a long time in software engineerin
 8. Predictability of efforts for development and bug fix with confidence.
 9. TDD/ BDD by nature
 10. Support Viewless MVC
-
+11. Support DI by default.
+12. Flexible to any nested structure
+13. Manage state like cham.
